@@ -1,0 +1,32 @@
+{
+  "name": "irfan-xau-lab",
+  "version": "0.2.0",
+  "private": true,
+  "description": "IRFAN XAU LAB \u2022 INTELLIGENCE \u2014 Telegram Signal Scanner",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "test:runtime": "tsx scripts/runtime-test.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pg": "^8.12.0",
+    "nodemailer": "^6.9.13",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/pg": "^8.11.6",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "@types/nodemailer": "^6.4.14",
+    "@types/express": "^4.17.21"
+  }
+}
